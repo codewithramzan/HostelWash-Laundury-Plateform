@@ -1,0 +1,105 @@
+PASS: Database and application timestamps use the same timezone
+PASS: Estimated total and coupon are computed server-side
+PASS: Assigned representative can see pickup
+PASS: Other student cannot read order
+PASS: Other hostel representative cannot read order
+PASS: Invalid order ID rejected
+PASS: Student cannot confirm payment
+PASS: Cannot pay before final weighing
+PASS: Student cannot collect own order
+PASS: Cannot skip processing states
+PASS: Final weight uses accepted price and coupon snapshots
+PASS: One unique tag created per bag
+PASS: Representative cannot update processing stage
+PASS: Delivery assigned when laundry ready
+PASS: Duplicate cash payment blocked
+PASS: Student sees delivered status
+PASS: Full lifecycle and payment audit history persisted
+PASS: Lifecycle notifications persisted
+PASS: Invalid quantity rejected: -1
+PASS: Invalid quantity rejected: 0
+PASS: Invalid quantity rejected: 1000
+PASS: Invalid quantity rejected: abc
+PASS: Room must belong to selected hostel
+PASS: Invalid coupon rejected
+PASS: Expired coupon rejected
+PASS: Inactive service rejected
+PASS: Inactive hostel rejected
+PASS: Coupon usage limit enforced
+PASS: Cancellation releases coupon reservation
+PASS: Per-item service requires whole quantities
+PASS: Per-item collection recalculates final total
+PASS: Duplicate bag tag rolls back entire collection
+PASS: Reset token is single-use
+PASS: Password reset stores valid password hash
+34 integration checks passed.
+[OK] PHP 8.2+
+[OK] pdo_mysql
+[OK] mbstring
+[OK] session
+[OK] json
+[OK] .env configuration exists
+[OK] APP_URL configured
+[OK] Writable storage/private
+[OK] Writable storage/logs
+[OK] Writable storage/uploads
+[OK] Writable storage/sessions
+[OK] Database connection
+[OK] All 18 tables present
+[OK] Required roles
+PASS HTTP: Public route /
+PASS HTTP: Public route /services
+PASS HTTP: Public route /pricing
+PASS HTTP: Public route /how-it-works
+PASS HTTP: Public route /hostels
+PASS HTTP: Public route /about
+PASS HTTP: Public route /faq
+PASS HTTP: Public route /contact
+PASS HTTP: Public route /terms
+PASS HTTP: Public route /privacy
+PASS HTTP: Public route /login
+PASS HTTP: Public route /register
+PASS HTTP: Public route /forgot
+PASS HTTP: Public route /reset
+PASS HTTP: Public route /verify
+PASS HTTP: Invalid login rejected
+PASS HTTP: Invalid CSRF rejected
+PASS HTTP: Student login and dashboard
+PASS HTTP: Student route /orders
+PASS HTTP: Student route /orders/new
+PASS HTTP: Student route /orders/1
+PASS HTTP: Student route /payments
+PASS HTTP: Student route /profile
+PASS HTTP: Student route /support
+PASS HTTP: Student route /notifications
+PASS HTTP: Student blocked from admin
+PASS HTTP: Support creation and output escaping
+PASS HTTP: HTTP order ownership enforced
+PASS HTTP: Admin login
+PASS HTTP: Admin route /dashboard
+PASS HTTP: Admin route /orders
+PASS HTTP: Admin route /orders/1
+PASS HTTP: Admin route /admin/users
+PASS HTTP: Admin route /admin/hostels
+PASS HTTP: Admin route /admin/rooms
+PASS HTTP: Admin route /admin/representatives
+PASS HTTP: Admin route /admin/services
+PASS HTTP: Admin route /payments
+PASS HTTP: Admin route /admin/expenses
+PASS HTTP: Admin route /admin/coupons
+PASS HTTP: Admin route /support
+PASS HTTP: Admin route /admin/reports
+PASS HTTP: Admin route /admin/settings
+PASS HTTP: Admin route /admin/content
+PASS HTTP: Admin route /admin/hostels?edit=1
+PASS HTTP: Admin route /admin/users?view=2
+PASS HTTP: Admin route /admin/reports?export=csv
+PASS HTTP: Admin expense CRUD create
+PASS HTTP: Logout returns login
+PASS HTTP: Session invalid after logout
+PASS HTTP: Student registration
+PASS HTTP: HTTP booking with redirect
+PASS HTTP: Order history renders
+53 HTTP checks passed.
+Browser checks passed: 48 responsive page/viewport checks, theme persistence, menu, room filter, price estimate, no JS exceptions.
+PASS browser business flow: representative collection → admin processing → representative cash receipt and delivery → student tracking; 320/375/425px table containment.
