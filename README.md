@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # HostelWash — Hostel Laundry Service Platform
 
 **Fresh Clothes. Brighter Days.**
@@ -804,3 +805,6 @@ Contributions and licensing
 Bug reports and focused improvement suggestions are welcome. Include the relevant page, expected behavior, reproduction steps, and environment details. Keep credentials, session files, private records, and real customer data out of commits and issue attachments.
 A project-wide license has not been added to this package. Bundled Bootstrap and Chart.js distributions retain their MIT license terms; see [`THIRD_PARTY_NOTICES.md`](THIRD_PARTY_NOTICES.md)
 >>>>>>> ef2cc2e5b4b7213f5013b6cc7b7d54ea33e2a266
+=======
+
+>>>>>>> dcb980e3953d899b8e8aff8f81f26668c34d3b19
